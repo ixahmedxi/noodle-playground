@@ -1,0 +1,24 @@
+{
+  "name": "@noodle/web",
+  "private": true,
+  "version": "0.1.0",
+  "description": "The web app for Noodle",
+  "author": "Ahmed Elsakaan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "next": "13.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@noodle/tsconfig": "workspace:*"
+  }
+}
