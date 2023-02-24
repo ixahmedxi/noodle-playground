@@ -1,0 +1,21 @@
+{
+  "name": "@noodle/tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Noodle's Tailwindcss configuration",
+  "main": "./tailwind.config.cjs",
+  "files": [
+    "./postcss.config.cjs"
+  ],
+  "author": "Ahmed Elsakaan",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}
