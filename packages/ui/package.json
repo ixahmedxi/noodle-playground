@@ -4,6 +4,11 @@
   "description": "Noodle's UI component library and design system",
   "author": "Ahmed Elsakaan",
   "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest --run"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -12,10 +17,6 @@
       "require": "./dist/index.js"
     }
   },
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch"
-  },
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -23,8 +24,12 @@
   "devDependencies": {
     "@noodle/tailwind": "workspace:*",
     "@noodle/tsconfig": "workspace:*",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "tailwindcss": "^3.2.7",
     "tsup": "^6.6.3"
   }
