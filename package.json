@@ -1,0 +1,11 @@
+{
+  "name": "noodle",
+  "version": "0.1.0",
+  "description": "Open source student productivity platform.",
+  "author": "Ahmed Elsakaan",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@7.27.1"
+}
