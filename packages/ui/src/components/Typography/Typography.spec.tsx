@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { Typography } from '.';
+import { Typography } from './Typography';
 
 describe('Typography component', () => {
   it('should render', () => {
