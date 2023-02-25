@@ -4,10 +4,8 @@ import { Typography } from '.';
 
 describe('Typography component', () => {
   it('should render', () => {
-    render(<Typography />);
+    render(<Typography>Hello World</Typography>);
 
-    expect(
-      screen.getByText("Hello, I'm from the ui package"),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/hello world/i)).toBeInTheDocument();
   });
 });
