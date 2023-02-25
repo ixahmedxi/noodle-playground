@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html:not(.dark) > .sb-show-main {
+  @apply bg-white !important;
+  @apply text-black;
+}
+
+.dark > .sb-show-main {
+  @apply bg-zinc-900 !important;
+  @apply text-white;
+}
