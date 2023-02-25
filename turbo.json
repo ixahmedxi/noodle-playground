@@ -2,14 +2,19 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": [".next/**"]
+      "outputs": [".next/**", "dist"]
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
-    "test": {
-      "cache": false
+    "test": {},
+    "storybook": {
+      "cache": false,
+      "persistent": true
+    },
+    "build-storybook": {
+      "outputs": ["storybook-static/**"]
     }
   }
 }
