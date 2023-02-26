@@ -1,5 +1,8 @@
 {
   "extends": "@noodle/tsconfig/react-lib.json",
-  "include": ["src"],
+  "compilerOptions": {
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "vitest.setup.ts"],
   "exclude": ["node_modules", "dist"]
 }

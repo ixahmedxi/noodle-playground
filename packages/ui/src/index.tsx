@@ -1,1 +1,1 @@
-export * from './components/typography';
+export * from './components/Typography/Typography';

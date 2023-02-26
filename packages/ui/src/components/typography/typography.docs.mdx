@@ -1,10 +1,77 @@
-import { Meta, Story } from '@storybook/blocks';
-import * as TypographyStories from './typography.stories';
+import { Meta, Story, Canvas, ArgsTable, Source } from '@storybook/blocks';
+import { Typography } from './Typography.tsx';
+import * as TypographyStories from './Typography.stories';
 
 <Meta of={TypographyStories} />
 
-# Typography docs
+# Typography
 
-if you see this, it is working, this is the mdx documentation
+The Typography component is responsible for rendering different variations of text styles based on the element type. This is used to render consistent text throught the application and in most cases the variant styles are sufficient without needing to alter it's styling.
 
-<Story of={TypographyStories.Default} />
+## Stories
+
+### Paragraph
+
+<Canvas>
+  <Story of={TypographyStories.Default} />
+</Canvas>
+
+### Heading 1
+
+<Canvas>
+  <Story of={TypographyStories.Heading1} />
+</Canvas>
+
+### Heading 2
+
+<Canvas>
+  <Story of={TypographyStories.Heading2} />
+</Canvas>
+
+### Heading 3
+
+<Canvas>
+  <Story of={TypographyStories.Heading3} />
+</Canvas>
+
+### Heading 4
+
+<Canvas>
+  <Story of={TypographyStories.Heading4} />
+</Canvas>
+
+### Heading 5
+
+<Canvas>
+  <Story of={TypographyStories.Heading5} />
+</Canvas>
+
+### Heading 6
+
+<Canvas>
+  <Story of={TypographyStories.Heading6} />
+</Canvas>
+
+## Usage
+
+Below is a basic example of using the Typography component to render an h2 element with blue text.
+
+<Source
+  language="tsx"
+  format
+  dark
+  code={`import { Typography } from '@noodle/ui';\n
+export const App = () => {
+  return (
+    <Typography variant="h2" className="text-blue-500">
+      Text here
+    </Typography>
+  );
+};`}
+/>
+
+## API
+
+The Typography component accepts a `variant` prop which dictates the element type as well as it's styling, it defaults to `p` if no variant is explicitly defined. The component also expects children so that they are rendered as the text as well as an optional `className` prop that is used in the rare cases where the styling of the element needs to be altered.
+
+<ArgsTable of={Typography} />
