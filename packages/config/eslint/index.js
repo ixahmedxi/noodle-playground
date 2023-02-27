@@ -9,6 +9,10 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:vitest/recommended'],
+    },
+    {
       files: ['*.ts', '*.tsx'],
       extends: [
         'plugin:@typescript-eslint/recommended',
