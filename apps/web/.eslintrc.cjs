@@ -10,5 +10,10 @@ module.exports = {
     next: {
       rootDir: 'apps/web',
     },
+    'import/resolver': {
+      typescript: {
+        project: ['./tsconfig.json'],
+      },
+    },
   },
 };

@@ -1,5 +1,5 @@
 /** @type {import('eslint').Linter.Config} */
-module.exports = {
+const config = {
   ignorePatterns: [
     '**/node_modules/*',
     '**/dist/*',
@@ -57,3 +57,5 @@ module.exports = {
     node: true,
   },
 };
+
+module.exports = config;
