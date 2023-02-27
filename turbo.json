@@ -9,10 +9,6 @@
       "cache": false,
       "persistent": true
     },
-    "lint": {},
-    "lint:fix": {},
-    "test": {},
-    "test:coverage": {},
     "test:watch": {
       "cache": false,
       "persistent": true
@@ -23,6 +19,10 @@
     },
     "build-storybook": {
       "outputs": ["storybook-static/**"]
-    }
+    },
+    "lint": {},
+    "lint:fix": {},
+    "test": {},
+    "test:coverage": {}
   }
 }
