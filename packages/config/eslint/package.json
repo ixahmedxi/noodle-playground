@@ -5,11 +5,12 @@
   "private": true,
   "license": "MIT",
   "author": "Ahmed Elsakaan",
-  "main": "index.js",
   "files": [
+    "./base.js",
     "./next.js",
     "./react.js",
-    "./storybook.js"
+    "./storybook.js",
+    "./vitest.js"
   ],
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.2.1",
