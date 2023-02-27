@@ -1,6 +1,11 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  ignorePatterns: ['**/node_modules/*', '**/dist/*', '**/build/*'],
+  ignorePatterns: [
+    '**/node_modules/*',
+    '**/dist/*',
+    '**/build/*',
+    '**/storybook-static/*',
+  ],
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
@@ -50,4 +55,7 @@ module.exports = {
       },
     },
   ],
+  env: {
+    node: true,
+  },
 };
