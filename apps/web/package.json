@@ -18,6 +18,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "eslint-config-noodle": "workspace:*",
     "@noodle/tailwind": "workspace:*",
     "@noodle/tsconfig": "workspace:*",
     "@noodle/ui": "workspace:*",
