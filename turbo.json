@@ -15,6 +15,9 @@
     "lint": {},
     "lint:fix": {},
     "test": {},
-    "test:coverage": {}
+    "test:coverage": {},
+    "type-check": {
+      "outputs": ["*.tsbuildinfo"]
+    }
   }
 }

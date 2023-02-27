@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.cjs ."
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.cjs .",
+    "type-check": "tsc --noEmit"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
