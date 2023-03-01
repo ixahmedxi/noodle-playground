@@ -6,6 +6,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: [
       './tsconfig.json',
+      './packages/*/.storybook/tsconfig.json',
       './packages/*/tsconfig.json',
       './apps/*/tsconfig.json',
     ],

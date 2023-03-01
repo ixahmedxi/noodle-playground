@@ -46,7 +46,11 @@ const config = {
         },
         'import/resolver': {
           typescript: {
-            project: ['packages/*/tsconfig.json', 'apps/*/tsconfig.json'],
+            project: [
+              'packages/*/tsconfig.json',
+              'apps/*/tsconfig.json',
+              'packages/*/.storybook/tsconfig.json',
+            ],
           },
           node: true,
         },

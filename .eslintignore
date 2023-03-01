@@ -1,0 +1,2 @@
+# We want to lint the .storybook folder as well
+!.storybook
