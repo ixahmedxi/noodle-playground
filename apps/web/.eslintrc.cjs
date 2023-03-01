@@ -6,6 +6,15 @@ module.exports = {
       files: ['e2e/**/*.ts'],
       extends: ['noodle/playwright'],
     },
+    {
+      files: [
+        'src/**/*.spec.ts',
+        'src/**/*.spec.tsx',
+        'src/**/*.test.ts',
+        'src/**/*.test.tsx',
+      ],
+      extends: ['noodle/vitest'],
+    },
   ],
   parserOptions: {
     babelOptions: {

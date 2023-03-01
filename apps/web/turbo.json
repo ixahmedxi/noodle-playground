@@ -5,6 +5,11 @@
     "build": {
       "outputs": [".next/**"]
     },
+    "start": {
+      "dependsOn": ["build", "^build"],
+      "cache": false,
+      "persistent": true
+    },
     "test:e2e": {
       "inputs": ["src/**/*", "e2e/**/*"],
       "outputs": ["playwright-report/**"]
