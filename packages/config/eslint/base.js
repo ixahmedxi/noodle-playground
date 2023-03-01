@@ -18,6 +18,7 @@ const config = {
       extends: [
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:isaacscript/recommended',
         'plugin:import/typescript',
       ],
       parser: '@typescript-eslint/parser',
@@ -47,6 +48,12 @@ const config = {
           },
         ],
         'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+        'isaacscript/format-line-comments': [
+          'error',
+          {
+            maxLength: 80,
+          },
+        ],
       },
       settings: {
         'import/parsers': {

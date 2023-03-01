@@ -83,6 +83,7 @@ importers:
       eslint-import-resolver-typescript: ^3.5.3
       eslint-plugin-eslint-comments: ^3.2.0
       eslint-plugin-import: ^2.27.5
+      eslint-plugin-isaacscript: ^2.6.6
       eslint-plugin-jest-dom: ^4.0.3
       eslint-plugin-jsx-a11y: ^6.7.1
       eslint-plugin-playwright: ^0.12.0
@@ -101,6 +102,7 @@ importers:
       eslint-import-resolver-typescript: 3.5.3_yckic57kx266ph64dhq6ozvb54
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.35.0
       eslint-plugin-import: 2.27.5_tqrcrxlenpngfto46ddarus52y
+      eslint-plugin-isaacscript: 2.6.6_6mj2wypvdnknez7kws2nfdgupi
       eslint-plugin-jest-dom: 4.0.3_eslint@8.35.0
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.35.0
       eslint-plugin-playwright: 0.12.0_eslint@8.35.0
@@ -5853,6 +5855,18 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+    dev: true
+
+  /eslint-plugin-isaacscript/2.6.6_6mj2wypvdnknez7kws2nfdgupi:
+    resolution: {integrity: sha512-r+fd/ojmEAJAuGNx5s5z6HB/0NyUxiHcBuX83+0WA5vr43bQnn45i2A1NXPhxnjgv9VVYPgt4w3H15DJmJz0lQ==}
+    peerDependencies:
+      '@typescript-eslint/parser': '>= 5.0.0'
+      eslint: '>= 8.0.0'
+      typescript: '>= 4.0.0'
+    dependencies:
+      '@typescript-eslint/parser': 5.54.0_ycpbpc6yetojsgtrx3mwntkhsu
+      eslint: 8.35.0
+      typescript: 4.9.5
     dev: true
 
   /eslint-plugin-jest-dom/4.0.3_eslint@8.35.0:

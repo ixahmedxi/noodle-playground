@@ -1,5 +1,5 @@
-import { cva, VariantProps } from 'class-variance-authority';
-import { FC, ReactNode } from 'react';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { type FC, type ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 const typographyStyles = cva(['text-base'], {
