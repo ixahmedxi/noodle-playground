@@ -4054,7 +4054,7 @@ packages:
       c8: 7.13.0
       picocolors: 1.0.0
       std-env: 3.3.2
-      vitest: 0.29.2
+      vitest: 0.29.2_jsdom@21.1.0
     dev: true
 
   /@vitest/expect/0.29.2:

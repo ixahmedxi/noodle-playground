@@ -13,8 +13,7 @@ const config: StorybookConfig = {
       name: '@storybook/addon-postcss',
       options: {
         postcssLoaderOptions: {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          implementation: require('postcss'),
+          implementation: require('postcss') as unknown,
         },
       },
     },
