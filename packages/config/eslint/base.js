@@ -39,6 +39,14 @@ const config = {
             ],
           },
         ],
+        '@typescript-eslint/consistent-type-imports': [
+          'warn',
+          {
+            prefer: 'type-imports',
+            fixStyle: 'inline-type-imports',
+          },
+        ],
+        'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
       },
       settings: {
         'import/parsers': {

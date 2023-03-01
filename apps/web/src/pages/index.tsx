@@ -1,5 +1,5 @@
 import { Typography } from '@noodle/ui';
-import { NextPage } from 'next';
+import { type NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
