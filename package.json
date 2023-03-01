@@ -10,7 +10,10 @@
   "packageManager": "pnpm@7.28.0",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "pnpm turbo lint",
+    "dev": "pnpm turbo dev",
+    "build": "pnpm turbo build",
+    "start": "pnpm turbo start"
   },
   "devDependencies": {
     "@noodle/tsconfig": "workspace:^0.1.0",
