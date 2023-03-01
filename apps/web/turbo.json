@@ -4,6 +4,10 @@
   "pipeline": {
     "build": {
       "outputs": [".next/**"]
+    },
+    "test:e2e": {
+      "inputs": ["src/**/*", "e2e/**/*"],
+      "outputs": ["playwright-report/**"]
     }
   }
 }
