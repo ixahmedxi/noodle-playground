@@ -5,6 +5,7 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   outDir: 'dist',
   dts: true,
+  treeshake: true,
   clean: true,
   splitting: true,
   sourcemap: true,
