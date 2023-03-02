@@ -1,0 +1,77 @@
+import { Meta, Story, Canvas, ArgsTable, Source } from '@storybook/blocks';
+import { Text } from './Text.tsx';
+import * as TextStories from './Text.stories';
+
+<Meta of={TextStories} />
+
+# Text
+
+The Text component is responsible for rendering different variations of text styles based on the element type. This is used to render consistent text throught the application and in most cases the variant styles are sufficient without needing to alter it's styling.
+
+## Stories
+
+### Paragraph
+
+<Canvas>
+  <Story of={TextStories.Default} />
+</Canvas>
+
+### Heading 1
+
+<Canvas>
+  <Story of={TextStories.Heading1} />
+</Canvas>
+
+### Heading 2
+
+<Canvas>
+  <Story of={TextStories.Heading2} />
+</Canvas>
+
+### Heading 3
+
+<Canvas>
+  <Story of={TextStories.Heading3} />
+</Canvas>
+
+### Heading 4
+
+<Canvas>
+  <Story of={TextStories.Heading4} />
+</Canvas>
+
+### Heading 5
+
+<Canvas>
+  <Story of={TextStories.Heading5} />
+</Canvas>
+
+### Heading 6
+
+<Canvas>
+  <Story of={TextStories.Heading6} />
+</Canvas>
+
+## Usage
+
+Below is a basic example of using the Text component to render an h2 element with blue text.
+
+<Source
+  language="tsx"
+  format
+  dark
+  code={`import { Text } from '@noodle/ui';\n
+export const App = () => {
+  return (
+    <Text variant="h2" className="text-blue-500">
+      Text here
+    </Text>
+  );
+};`}
+/>
+
+## API
+
+The Text component accepts a `variant` prop which dictates the element type as well as it's styling, it defaults to `p` if no variant is explicitly defined. The component also expects children so that they are rendered as the text as well as an optional `className` prop that is used in the rare cases where the styling of the element needs to be altered.
+
+<ArgsTable of={Text} />

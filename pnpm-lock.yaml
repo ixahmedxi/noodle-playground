@@ -154,6 +154,7 @@ importers:
       '@vitest/coverage-c8': ^0.29.2
       autoprefixer: ^10.4.13
       class-variance-authority: ^0.4.0
+      clsx: ^1.2.1
       eslint-config-noodle: workspace:*
       jsdom: ^21.1.0
       postcss: ^8.4.21
@@ -168,6 +169,7 @@ importers:
       vitest: ^0.29.2
     dependencies:
       class-variance-authority: 0.4.0_typescript@4.9.5
+      clsx: 1.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwind-merge: 1.10.0
@@ -4979,6 +4981,11 @@ packages:
     dependencies:
       mimic-response: 1.0.1
     dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
