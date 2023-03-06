@@ -1,0 +1,24 @@
+{
+  "name": "@noodle/auth",
+  "version": "0.1.0",
+  "description": "Noodle's next-auth configuration package",
+  "author": "Ahmed Elsakaan",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .ts,.js,.cjs .",
+    "lint:fix": "eslint --ext .ts,.js,.cjs . --fix",
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "@noodle/tsconfig": "workspace:*",
+    "eslint-config-noodle": "workspace:*",
+    "tsup": "^6.6.3"
+  },
+  "dependencies": {
+    "@noodle/database": "workspace:*",
+    "@next-auth/prisma-adapter": "^1.0.5",
+    "next-auth": "^4.20.1"
+  }
+}
