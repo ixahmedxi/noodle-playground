@@ -19,7 +19,9 @@
     "lint:fix": "eslint --ext .ts,.js,.cjs . --fix",
     "build": "tsup",
     "dev": "tsup --watch",
-    "db:generate": "prisma generate"
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "db:studio": "prisma studio"
   },
   "devDependencies": {
     "@noodle/tsconfig": "workspace:*",

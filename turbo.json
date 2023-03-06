@@ -14,7 +14,6 @@
     },
     "lint": {},
     "lint:fix": {},
-    "db:generate": {},
     "test": {},
     "test:coverage": {},
     "type-check": {
