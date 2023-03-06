@@ -18,7 +18,8 @@
     "lint": "eslint --ext .ts,.js,.cjs .",
     "lint:fix": "eslint --ext .ts,.js,.cjs . --fix",
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "db:generate": "prisma generate"
   },
   "devDependencies": {
     "@noodle/tsconfig": "workspace:*",

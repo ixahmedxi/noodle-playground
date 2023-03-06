@@ -9,12 +9,14 @@
   },
   "packageManager": "pnpm@7.29.0",
   "scripts": {
-    "postinstall": "pnpm build",
+    "clean": "rm -rf node_modules **/node_modules **/dist **/.next",
+    "postinstall": "pnpm db:generate && pnpm build",
     "format": "prettier --write .",
     "lint": "pnpm turbo lint",
     "dev": "pnpm turbo dev",
     "build": "pnpm turbo build",
-    "start": "pnpm turbo start"
+    "start": "pnpm turbo start",
+    "db:generate": "pnpm turbo db:generate"
   },
   "devDependencies": {
     "@noodle/tsconfig": "workspace:^0.1.0",
