@@ -63,6 +63,7 @@ const config = {
           typescript: {
             project: [
               'packages/*/tsconfig.json',
+              'packages/server/*/tsconfig.json',
               'apps/*/tsconfig.json',
               'packages/*/.storybook/tsconfig.json',
             ],

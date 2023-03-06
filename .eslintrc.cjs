@@ -8,6 +8,7 @@ module.exports = {
       './tsconfig.json',
       './packages/*/.storybook/tsconfig.json',
       './packages/*/tsconfig.json',
+      'packages/server/*/tsconfig.json',
       './apps/*/tsconfig.json',
     ],
   },

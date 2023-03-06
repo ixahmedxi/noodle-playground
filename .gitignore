@@ -137,3 +137,6 @@ storybook-static
 **/test-results/
 **/playwright-report/
 **/playwright/.cache/
+
+# Docker databases
+dbs
