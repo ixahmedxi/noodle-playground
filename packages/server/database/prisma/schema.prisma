@@ -8,12 +8,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
-  id      String @id @default(cuid())
-  title   String
-  content String
-}
-
 model Account {
   id                String  @id @default(cuid())
   userId            String
