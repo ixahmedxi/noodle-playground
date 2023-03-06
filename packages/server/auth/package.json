@@ -5,6 +5,20 @@
   "author": "Ahmed Elsakaan",
   "license": "MIT",
   "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.mjs",
+      "require": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    }
+  },
   "scripts": {
     "lint": "eslint --ext .ts,.js,.cjs .",
     "lint:fix": "eslint --ext .ts,.js,.cjs . --fix",
