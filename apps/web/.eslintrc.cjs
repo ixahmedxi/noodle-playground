@@ -17,6 +17,7 @@ module.exports = {
     },
   ],
   parserOptions: {
+    project: ['apps/web/tsconfig.json', 'tsconfig.json'],
     babelOptions: {
       presets: [require.resolve('next/babel')],
     },
@@ -27,7 +28,10 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {
-        project: ['./tsconfig.json'],
+        project: ['apps/web/tsconfig.json', 'tsconfig.json'],
+      },
+      node: {
+        project: ['apps/web/tsconfig.json', 'tsconfig.json'],
       },
     },
   },

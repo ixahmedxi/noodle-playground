@@ -22,7 +22,7 @@ const config = {
         'plugin:import/typescript',
       ],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
+      plugins: ['@typescript-eslint', 'import'],
       rules: {
         // Most javascript files in the project are for config so importing devDependencies is expected.
         'import/no-extraneous-dependencies': [
@@ -68,7 +68,14 @@ const config = {
               'packages/*/.storybook/tsconfig.json',
             ],
           },
-          node: true,
+          node: {
+            project: [
+              'packages/*/tsconfig.json',
+              'packages/server/*/tsconfig.json',
+              'apps/*/tsconfig.json',
+              'packages/*/.storybook/tsconfig.json',
+            ],
+          },
         },
       },
     },

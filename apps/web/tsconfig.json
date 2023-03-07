@@ -1,6 +1,7 @@
 {
   "extends": "@noodle/tsconfig/nextjs.json",
   "compilerOptions": {
+    "strict": true,
     "baseUrl": ".",
     "types": ["vitest/globals"],
     "paths": {
