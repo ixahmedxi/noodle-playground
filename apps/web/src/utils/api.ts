@@ -1,8 +1,4 @@
-import {
-  type AppRouter,
-  type inferRouterInputs,
-  type inferRouterOutputs,
-} from '@noodle/api';
+import { type AppRouter } from '@noodle/api';
 import { getBaseUrl } from '@noodle/api/utils';
 import { httpBatchLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
@@ -21,6 +17,3 @@ export const trpc = createTRPCNext<AppRouter>({
   },
   ssr: false,
 });
-
-export type RouterInputs = inferRouterInputs<AppRouter>;
-export type RouterOutputs = inferRouterOutputs<AppRouter>;
