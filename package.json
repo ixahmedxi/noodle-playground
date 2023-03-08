@@ -10,7 +10,7 @@
   "packageManager": "pnpm@7.29.0",
   "scripts": {
     "clean": "pnpm docker:down && rm -f -r node_modules **/node_modules **/dist **/.next **/.turbo",
-    "postinstall": "pnpm db:generate && pnpm build:packages",
+    "postinstall": "pnpm build:packages",
     "format": "prettier --write .",
     "lint": "pnpm turbo lint",
     "dev": "pnpm turbo dev",
@@ -18,10 +18,7 @@
     "build:packages": "pnpm turbo build --filter=!@noodle/web",
     "start": "pnpm turbo start",
     "docker:up": "docker compose up -d",
-    "docker:down": "docker compose down -v",
-    "db:generate": "pnpm turbo db:generate",
-    "db:push": "pnpm turbo db:push",
-    "db:studio": "pnpm turbo db:studio"
+    "docker:down": "docker compose down -v"
   },
   "devDependencies": {
     "@noodle/tsconfig": "workspace:^0.1.0",

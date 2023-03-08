@@ -1,5 +1,0 @@
-{
-  "extends": "@noodle/tsconfig/base.json",
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "dist"]
-}
