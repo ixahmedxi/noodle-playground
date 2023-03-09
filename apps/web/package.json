@@ -17,11 +17,20 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@noodle/api": "workspace:*",
     "@noodle/ui": "workspace:*",
+    "@tanstack/react-query": "^4.26.1",
+    "@trpc/client": "^10.14.1",
+    "@trpc/next": "^10.14.1",
+    "@trpc/react-query": "^10.14.1",
+    "@trpc/server": "^10.14.1",
     "next": "13.2.3",
+    "next-auth": "^4.20.1",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "superjson": "^1.12.2",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@noodle/tailwind": "workspace:*",

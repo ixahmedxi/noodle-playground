@@ -1,13 +1,24 @@
 import '@/styles/globals.css';
+import { trpc } from '@/utils/trpc';
+import { type Session } from 'next-auth';
+import { SessionProvider } from 'next-auth/react';
 import { ThemeProvider } from 'next-themes';
 import { type AppProps } from 'next/app';
 
-const App = ({ Component, pageProps }: AppProps) => {
+interface MyAppProps extends AppProps {
+  pageProps: {
+    session: Session;
+  };
+}
+
+const App = ({ Component, pageProps }: MyAppProps) => {
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <SessionProvider session={pageProps.session}>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </SessionProvider>
   );
 };
 
-export default App;
+export default trpc.withTRPC(App);

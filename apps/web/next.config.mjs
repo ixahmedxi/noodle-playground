@@ -14,6 +14,7 @@ const config = {
   typescript: {
     ignoreBuildErrors: !!process.env.CI || true,
   },
+  transpilePackages: ['@noodle/api'],
   webpack: (config, { isServer }) => {
     if (isServer) {
       config.plugins = [...config.plugins, new PrismaPlugin()];
