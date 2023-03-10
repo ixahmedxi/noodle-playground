@@ -1,0 +1,38 @@
+{
+  "npmScope": "noodle",
+  "defaultProject": "web",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "type-check",
+          "test",
+          "test:coverage",
+          "test:e2e",
+          "build-storybook"
+        ],
+        "accessToken": "Mjk5ZjMzYmEtNTdhZi00NWU4LTlkNjItMTcxZTY5YWMwNWMwfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist/**"]
+    },
+    "build-storybook": {
+      "dependsOn": ["^build-storybook"],
+      "outputs": ["{projectRoot}/storybook-static"]
+    },
+    "type-check": {
+      "outputs": ["{projectRoot}/*.tsbuildinfo"]
+    },
+    "test:e2e": {
+      "outputs": ["{projectRoot}/playwright-report"]
+    }
+  },
+  "defaultBase": "main"
+}
